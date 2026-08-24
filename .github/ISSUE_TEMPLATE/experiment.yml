@@ -1,0 +1,64 @@
+name: Learning experiment
+description: Frame a small, testable, and evidence-led unit of work.
+title: "experiment: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Define the outcome before selecting tools. Do not paste secrets or personal data.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Observable outcome
+      description: Who can do what after this change, and how will we know?
+      placeholder: A reviewer can reproduce...
+    validations:
+      required: true
+  - type: textarea
+    id: why-now
+    attributes:
+      label: Why now?
+      description: What decision or learning goal does this support?
+    validations:
+      required: true
+  - type: textarea
+    id: non-goals
+    attributes:
+      label: Non-goals
+      description: What is deliberately outside this issue?
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Data and trust boundaries
+      description: Identify secrets, identities, permissions, AI inputs, and external systems.
+      placeholder: Synthetic data only; no external writes...
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Acceptance checks
+      description: Include expected behavior and at least one important failure case.
+      placeholder: |
+        - [ ] Expected case...
+        - [ ] Failure case...
+    validations:
+      required: true
+  - type: input
+    id: rollback
+    attributes:
+      label: Smallest safe rollback
+      placeholder: Revert the focused commit; disable the feature flag...
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Initial safety check
+      options:
+        - label: This issue contains no credentials or private data.
+          required: true
+        - label: AI will not autonomously publish, merge, or modify external systems.
+          required: true
