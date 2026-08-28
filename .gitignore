@@ -1,0 +1,11 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
