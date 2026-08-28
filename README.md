@@ -43,8 +43,9 @@ messages, and publication. See **[AI Boundaries](docs/AI-BOUNDARIES.md)**.
 
 ## Repository status
 
-This repository is currently **private and under review**. Public visibility is not
-approved until every required item in the publication gate passes.
+This repository is a **release candidate**. Its content passed an internal review,
+but changing visibility remains a separate human decision with transition checks.
+See the latest [publication review](reviews/PUBLICATION-REVIEW-2026-08-29.md).
 
 ## Reuse
 
