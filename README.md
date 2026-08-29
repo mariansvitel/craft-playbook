@@ -43,9 +43,9 @@ messages, and publication. See **[AI Boundaries](docs/AI-BOUNDARIES.md)**.
 
 ## Repository status
 
-This repository is a **release candidate**. Its content passed an internal review,
-but changing visibility remains a separate human decision with transition checks.
-See the latest [publication review](reviews/PUBLICATION-REVIEW-2026-08-29.md).
+This repository is **public and verified**. Its controlled release completed the
+content, security, and transition checks recorded in the latest
+[publication review](reviews/PUBLICATION-REVIEW-2026-08-29.md).
 
 ## Reuse
 
