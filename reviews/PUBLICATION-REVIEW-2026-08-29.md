@@ -2,11 +2,11 @@
 
 ## Decision
 
-**Hold for controlled public-release transition.**
+**Publish — controlled public-release transition completed.**
 
-The repository content is suitable for publication. The hold exists only because
-changing visibility requires explicit owner approval and two GitHub features can be
-verified only during or after the transition to public visibility.
+The owner approved publication. The repository was changed to public only after the
+private review passed, and every transition-only check was then verified. No rollback
+condition was triggered.
 
 ## Evidence reviewed
 
@@ -45,7 +45,7 @@ verified only during or after the transition to public visibility.
 - [x] The content is original or standard MIT license text.
 - [x] GitHub recognizes the repository license as MIT.
 - [x] Contribution, conduct, security, and maintenance expectations are documented.
-- [x] Release-candidate status is visible in the README.
+- [x] Public and verified status is visible in the README.
 
 ### Software and AI risk
 
@@ -57,12 +57,24 @@ verified only during or after the transition to public visibility.
 
 ## Transition-only checks
 
-- [ ] The owner explicitly approves changing visibility to public.
-- [ ] After the visibility change, the `Learning experiment` Issue Form renders on
+- [x] The owner explicitly approved changing visibility to public.
+- [x] After the visibility change, the `Learning experiment` Issue Form renders on
   the new-issue chooser.
-- [ ] Private vulnerability reporting is enabled and its link works.
-- [ ] Public security features and the repository's final public metadata are
+- [x] Private vulnerability reporting is enabled and its link works.
+- [x] Public security features and the repository's final public metadata are
   verified.
+
+## Transition evidence
+
+- GitHub reports repository visibility as public and the default branch as `main`.
+- The public new-issue chooser renders the `Learning experiment` Issue Form.
+- The chooser exposes a private security-report path, and the GitHub API reports
+  private vulnerability reporting as enabled.
+- The GitHub Community Profile reports 100%, with MIT license, README, contribution,
+  conduct, security, issue, and pull-request guidance present.
+- Secret scanning, push protection, and Dependabot security updates are enabled.
+- GitHub Pages remains disabled; no webhooks, deploy keys, or Actions secrets were
+  introduced during publication.
 
 ## Rollback
 
